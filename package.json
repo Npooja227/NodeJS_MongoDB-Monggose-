@@ -1,0 +1,31 @@
+{
+  "name": "project9_nodejs_mongo_mongoose",
+  "version": "1.0.0",
+  "description": "Project of Node JS, Mongo DB with help of Mongoose(ODM - Object Document Mapping), which is used to convert an object in our project to documents in mongo db and viceversa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Npooja227/NodeJS_MongoDB-Mongoose-.git"
+  },
+  "keywords": [
+    "Node.Js",
+    "Mongo",
+    "DB",
+    "Mongoose"
+  ],
+  "author": "Pooja Naraharisetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Npooja227/NodeJS_MongoDB-Mongoose-/issues"
+  },
+  "homepage": "https://github.com/Npooja227/NodeJS_MongoDB-Mongoose-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12",
+    "nodemon": "^1.19.2"
+  }
+}
