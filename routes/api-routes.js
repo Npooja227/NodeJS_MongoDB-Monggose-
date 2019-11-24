@@ -14,9 +14,6 @@ module.exports = function (app) {
         
     app.get('/:table_name', (req, res) => {
 
-        /*get_schema(req, (schema) => {
-            console.log(schema);*/
-
         if (req.params.table_name == 'student') schema = student;
         else if (req.params.table_name == 'course') schema = course;
 
@@ -27,9 +24,7 @@ module.exports = function (app) {
                 .catch(err => {
                     res.status(400).send({ message: err.message })
                 })
-        /*})*/
-        
-        
+
     });
 
     app.post('/:table_name', (req, res) => {
@@ -45,13 +40,6 @@ module.exports = function (app) {
             }
         })
 
-       /* new_student.insertOne()
-            .then((data) => {
-                res.status(201).send(data);
-            })
-            .catch((error) => {
-                res.status(400).json({ error: error.message });
-            });*/
     });
 
     app.put('/:table_name', (req, res) => {
